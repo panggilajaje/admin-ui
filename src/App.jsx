@@ -11,7 +11,7 @@ import { productInputs, userInputs } from "./formsource";
 function App() {
   return (
     <>
-      <BrowserRouter>
+     <BrowserRouter>
         <Routes>
           <Route path="/">
             <Route index element={<Home />}></Route>
@@ -19,9 +19,7 @@ function App() {
             <Route path="users">
               <Route index element={<List />}></Route>
               <Route path=":userId" element={<Single />}></Route>
-              <Route 
-                path="new" 
-                element={<New inputs={userInputs} title="Add New User"/>}
+              <Route path="new" element={<New inputs={userInputs} title="Add New User"/>}
               />
             </Route>
             <Route path="products">
